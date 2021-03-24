@@ -6,9 +6,23 @@
     <title>MySite</title> <!-- サイトのタイトル -->
 </head>
 <body>　<!-- 動作の内容 -->
-   
-   <!-- ひとまとまりとしてかんがえるときに使う -->
-   <div class="container">
+    
+    <!-- ====================== サイトの案内をする役割 ==============================-->
+    <nav>
+       <!-- リストに関するタグ -->
+        <ul class="container">
+            <!-- リストの項目 -->
+            <li><a href="index.html"> My site </a></li>
+            <li><a href="http://google.com"> google </a></li>
+            <li><a href="http://facebook.com"> facebook </a></li>
+            <li><a href="http://apple.com"> apple </a></li>
+            <li><a href="http://life-is-tech.com"> Life is Tech! </a></li>
+            
+        </ul>
+    </nav>
+    
+    <!-- =======================ひとまとまりとしてかんがえるときに使う======================= -->
+    <div class="container">
         
         <!-- ========================img 画像を扱うときに使う ==============================-->
         <!-- 
@@ -17,18 +31,18 @@
              width="画像幅"
              height="画像の高さ"> 
          -->
-        <img src="IMG_5370.JPG" alt="" width="240">
+        <img class="top-image" src="IMG_5370.JPG" alt="" width="240">
         
         
       
         <!--========================= h1は見出し =========================================-->
         <!-- h1~h6まである -->
-        <h1>こんにちは</h1>
+        <h1 class="title">こんにちは</h1>
         
         
         
         <!-- =========================文章入力、　囲まれているところが一段落の塊================ -->
-        <p>
+        <p class="description">
             こんにちは、初めてのウェブデザインです。
             ここから特に書くこともないので、ツイッターの自己紹介文を書き込んでおきます。
             (アニメ、写真、pc、日常生活が主になると思います)
@@ -43,8 +57,13 @@
     
         <!-- =========================<a>タグを使い、リンクを作れる=========================== -->
         <!-- target="_blank"　とするとリンク先を新しいタブで開くことができる -->
-        <a href="http://life-is-tech.com"
-           target="_blank">life is Tech!</a>
+        <a class="lit-button"
+           href="http://life-is-tech.com"
+           target="_blank">
+           
+           life is Tech!
+           
+        </a>
            
            
            

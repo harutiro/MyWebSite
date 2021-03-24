@@ -4,6 +4,37 @@
     padding: 0;
 }
 
+/*========================メニューバー==================================*/
+nav{
+    overflow: hidden;
+    background: #ff4c4c;
+    margin-bottom: 30px;
+}
+
+/* nav の中の li だけ適応する*/
+nav li{
+/*    横並び*/
+    float: left;
+/*    箇条書きの「・」をなくす*/
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    display: block;
+    transition: 0.5;
+    
+}
+
+nav a:hover{
+    background: #fff;
+    color: #ff4c4c;
+}
+
+/*========================通常========================================*/
+
 .container{
 /*    コンテンツの幅を指定*/
     width: 600px;
@@ -12,14 +43,14 @@
     
 }
 
-img{
+.top-image{
 /*    要素を左に回り込ませる*/
     float: left;
 /*    左に余白を置く*/
     margin-right: 10px;
 }
 
-h1{
+.title{
 /*    要素を左に並べる*/
     float: left;
 /*    フォントサイズ*/
@@ -31,7 +62,7 @@ h1{
     
 }
 
-p{
+.description{
     /*    要素を左に並べる*/
     float: left;
 /*    フォントサイズ*/
@@ -42,8 +73,9 @@ p{
     margin-bottom: 5px;
 }
 
+/*=======================かっこいいボタン================================*/
 /*===================aタグの背景をすべてピンクにする=======================*/
-a{
+.lit-button{
     
 /*    背景*/
     background: #f9f9f9;
@@ -64,7 +96,7 @@ a{
 }
 
 /*====================aタグでマウスが重なったときの動作======================*/
-a:hover{
+.lit-button:hover{
     background: #ff4c4c;
     color: #f9f9f9;
     
